@@ -22,7 +22,7 @@ namespace PaypalIPN.Models
                 //check that the payment_status is Completed                 
                 if (_PayPalCheckoutInfo.payment_status.ToLower() == "completed")
                 {
-
+                    throw new Exception("ok");
                     //check that txn_id has not been previously processed to prevent duplicates                      
 
                     //check that receiver_email is your Primary PayPal email                                          
